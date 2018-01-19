@@ -133,4 +133,5 @@ func main() {
 	testMod()
 	testPow()
 	displayArg(getArg())
+	test()
 }
