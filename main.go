@@ -8,7 +8,7 @@ func sum(x, y int) int {
 }
 
 func sous(x, y int) int {
-	return x - y;
+	return x - y
 }
 
 func mul(x, y int) int {
@@ -107,15 +107,15 @@ func testPow() {
 	fmt.Printf("Pow of -10 %d\n", pow(-10))
 }
 
-func getArgv() ([]string) {
+func getArgv() []string {
 	return os.Args
 }
 
-func getArgc() (int) {
+func getArgc() int {
 	return len(getArgv())
 }
 
-func getArg() ([]string, int){
+func getArg() ([]string, int) {
 	return getArgv(), getArgc()
 }
 
@@ -134,4 +134,5 @@ func main() {
 	testPow()
 	displayArg(getArg())
 	test()
+	testUser()
 }

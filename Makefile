@@ -18,6 +18,6 @@ all: $(NAME)
 
 $(NAME):
 	echo $(INCLUDE)
-	go build -o test_file $(INCLUDE)
+	go build -o a.out $(INCLUDE)
 
 .PHONY : all
