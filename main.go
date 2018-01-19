@@ -135,4 +135,6 @@ func main() {
 	displayArg(getArg())
 	test()
 	testUser()
+	fmt.Printf("test cmp aaaa == %d\n", ft_strcmp("test", "aaaa"))
+	fmt.Printf("test cmp aaaa == %d\n", ft_strncmp("test", "test", -1))
 }
