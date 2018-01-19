@@ -107,9 +107,16 @@ func testPow() {
 	fmt.Printf("Pow of -10 %d\n", pow(-10))
 }
 
+func getArgv() ([]string) {
+	return os.Args
+}
+
+func getArgc() (int) {
+	return len(getArgv())
+}
+
 func getArg() ([]string, int){
-	argv := os.Args
-	return argv, len(argv)
+	return getArgv(), getArgc()
 }
 
 func displayArg(argv []string, argc int) {
@@ -125,6 +132,5 @@ func main() {
 	testDiv()
 	testMod()
 	testPow()
-	//argv []string, argc int = getArg()
 	displayArg(getArg())
 }
