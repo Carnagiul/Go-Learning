@@ -7,47 +7,46 @@ func swap(x, y int) (int, int) {
 	return y, x
 }
 
-
-func testSum() {
-	fmt.Printf("Sum of 4 + 4 %d\n", sum(4, 4))
-	fmt.Printf("Sum of 4 + -4 %d\n", sum(4, -4))
-	fmt.Printf("Sum of -4 + -4 %d\n", sum(-4, -4))
-	fmt.Printf("Sum of -4 + 4 %d\n", sum(-4, 4))
+func testSum(Integer *Integer) {
+	fmt.Printf("Sum of 4 + 4 %d\n", Integer.sum(4, 4))
+	fmt.Printf("Sum of 4 + -4 %d\n", Integer.sum(4, -4))
+	fmt.Printf("Sum of -4 + -4 %d\n", Integer.sum(-4, -4))
+	fmt.Printf("Sum of -4 + 4 %d\n", Integer.sum(-4, 4))
 }
 
-func testSous() {
-	fmt.Printf("Sous of 4 - 4 %d\n", sous(4, 4))
-	fmt.Printf("Sous of 4 - -4 %d\n", sous(4, -4))
-	fmt.Printf("Sous of -4 - -4 %d\n", sous(-4, -4))
-	fmt.Printf("Sous of -4 - 4 %d\n", sous(-4, 4))
+func testSous(Integer *Integer) {
+	fmt.Printf("Sous of 4 - 4 %d\n", Integer.sous(4, 4))
+	fmt.Printf("Sous of 4 - -4 %d\n", Integer.sous(4, -4))
+	fmt.Printf("Sous of -4 - -4 %d\n", Integer.sous(-4, -4))
+	fmt.Printf("Sous of -4 - 4 %d\n", Integer.sous(-4, 4))
 }
 
-func testMul() {
-	fmt.Printf("mul of 4 * 4 %d\n", mul(4, 4))
-	fmt.Printf("mul of 4 * -4 %d\n", mul(4, -4))
-	fmt.Printf("mul of -4 * -4 %d\n", mul(-4, -4))
-	fmt.Printf("mul of -4 * 4 %d\n", mul(-4, 4))
+func testMul(Integer *Integer) {
+	fmt.Printf("mul of 4 * 4 %d\n", Integer.mul(4, 4))
+	fmt.Printf("mul of 4 * -4 %d\n", Integer.mul(4, -4))
+	fmt.Printf("mul of -4 * -4 %d\n", Integer.mul(-4, -4))
+	fmt.Printf("mul of -4 * 4 %d\n", Integer.mul(-4, 4))
 }
 
-func testDiv() {
-	fmt.Printf("Sum of 4 / 4 %d\n", div(4, 4))
-	fmt.Printf("Sum of 4 / -4 %d\n", div(4, -4))
-	fmt.Printf("Sum of -4 / -4 %d\n", div(-4, -4))
-	fmt.Printf("Sum of -4 / 4 %d\n", div(-4, 4))
+func testDiv(Integer *Integer) {
+	fmt.Printf("Sum of 4 / 4 %d\n", Integer.div(4, 4))
+	fmt.Printf("Sum of 4 / -4 %d\n", Integer.div(4, -4))
+	fmt.Printf("Sum of -4 / -4 %d\n", Integer.div(-4, -4))
+	fmt.Printf("Sum of -4 / 4 %d\n", Integer.div(-4, 4))
 }
 
-func testMod() {
-	fmt.Printf("Mod of 4 %% 4 %d\n", mod(4, 4))
-	fmt.Printf("Mod of 4 %% -4 %d\n", mod(4, -4))
-	fmt.Printf("Mod of -4 %% -4 %d\n", mod(-4, -4))
-	fmt.Printf("Mod of -4 %% 4 %d\n", mod(-4, 4))
+func testMod(Integer *Integer) {
+	fmt.Printf("Mod of 4 %% 4 %d\n", Integer.mod(4, 4))
+	fmt.Printf("Mod of 4 %% -4 %d\n", Integer.mod(4, -4))
+	fmt.Printf("Mod of -4 %% -4 %d\n", Integer.mod(-4, -4))
+	fmt.Printf("Mod of -4 %% 4 %d\n", Integer.mod(-4, 4))
 }
 
-func testPow() {
-	fmt.Printf("Pow of 1 %d\n", pow(1))
-	fmt.Printf("Pow of 10 %d\n", pow(10))
-	fmt.Printf("Pow of -1 %d\n", pow(-1))
-	fmt.Printf("Pow of -10 %d\n", pow(-10))
+func testPow(Integer *Integer) {
+	fmt.Printf("Pow of 1 %d\n", Integer.pow(1))
+	fmt.Printf("Pow of 10 %d\n", Integer.pow(10))
+	fmt.Printf("Pow of -1 %d\n", Integer.pow(-1))
+	fmt.Printf("Pow of -10 %d\n", Integer.pow(-10))
 }
 
 func getArgv() []string {
@@ -72,12 +71,12 @@ func main() {
 	var Integer *Integer
 
 	Integer = new(Integer)
-	testSum()
-	testSous()
-	testMul()
-	testDiv()
-	testMod()
-	testPow()
+	testSum(Integer)
+	testSous(Integer)
+	testMul(Integer)
+	testDiv(Integer)
+	testMod(Integer)
+	testPow(Integer)
 	displayArg(getArg())
 	test()
 	testUser()
