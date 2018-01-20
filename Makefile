@@ -14,10 +14,11 @@ NAME = wolf3d
 
 INCLUDE = $(shell find . -type f | grep "\.go")
 
+INCLUDE_2 = *.go
+
 all: $(NAME)
 
 $(NAME):
-	echo $(INCLUDE)
-	go build -o a.out $(INCLUDE)
+	go build -o a.out $(INCLUDE_2)
 
 .PHONY : all
