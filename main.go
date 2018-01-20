@@ -80,15 +80,15 @@ func displayArg(argv []string, argc int) {
 }
 
 func main() {
-	var Integer *Integer
+	var a *Integer
 
-	Integer = new(Integer)
-	testSum(Integer)
-	testSous(Integer)
-	testMul(Integer)
-	testDiv(Integer)
-	testMod(Integer)
-	testPow(Integer)
+	a = new(Integer)
+	testSum(a)
+	testSous(a)
+	testMul(a)
+	testDiv(a)
+	testMod(a)
+	testPow(a)
 	displayArg(getArg())
 	test()
 	testUser()
