@@ -43,10 +43,10 @@ func testMod(Integer *Integer) {
 }
 
 func testPow(Integer *Integer) {
-	fmt.Printf("Pow of 1 %d\n", Integer.pow(1))
-	fmt.Printf("Pow of 10 %d\n", Integer.pow(10))
-	fmt.Printf("Pow of -1 %d\n", Integer.pow(-1))
-	fmt.Printf("Pow of -10 %d\n", Integer.pow(-10))
+	fmt.Printf("Pow of 1 %d\n", Integer.get_pow(1))
+	fmt.Printf("Pow of 10 %d\n", Integer.get_pow(10))
+	fmt.Printf("Pow of -1 %d\n", Integer.get_pow(-1))
+	fmt.Printf("Pow of -10 %d\n", Integer.get_pow(-10))
 }
 
 func getArgv() []string {
