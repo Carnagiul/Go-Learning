@@ -33,10 +33,11 @@ func (data *Integer)is_prime(i int) int {
 
 func (data *Integer)get_next_prime(i int) int {
 	test := i + 1
-	for test := i + 1; data.is_prime(test) == 0; test++ {
-
+	for test := i + 1; test++ {
+		if data.is_prime(test) == 1 {
+			return 1
+		}
 	}
-	return test
 }
 
 func (data *Integer)factorial(i int) int {
