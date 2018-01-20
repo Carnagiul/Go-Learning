@@ -45,7 +45,7 @@ func (data *Integer)is_equal(x, y int) int {
 }
 
 func (data *Integer)get_pow(x int) int {
-	neg := signed(x)
+	neg := data.signed(x)
 	ret := 0
 	for ret = 0; x != 0; ret++ {
 		x = x / 10
@@ -58,8 +58,4 @@ func (data *Integer)signed(x int) int {
 		return -1
 	}
 	return 1
-}
-
-func getPi() float {
-	return 3.14
 }
