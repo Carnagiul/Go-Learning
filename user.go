@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-type user struct {
-	age		int
-	name	string
-	addr	string
-}
-
 func (user *user) setName(name string) {
 	user.name = name
 }

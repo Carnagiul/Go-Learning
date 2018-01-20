@@ -1,11 +1,5 @@
 package main
 
-type Integer struct {
-}
-
-type Float struct {
-}
-
 func (data *Integer)sum(a,b int) int {
 	return a + b
 }

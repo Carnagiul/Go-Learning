@@ -9,6 +9,12 @@ type Integer struct {
 type Float struct {
 }
 
+type user struct {
+	age		int
+	name	string
+	addr	string
+}
+
 func swap(x, y int) (int, int) {
 	return y, x
 }
