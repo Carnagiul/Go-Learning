@@ -61,6 +61,27 @@ func testPow(Integer *Integer) {
 	fmt.Printf("Pow of -10 %d\n", Integer.get_pow(-10))
 }
 
+func testPrime(Integer *Integer) {
+	fmt.Printf("isPrime of 1 %d\n", Integer.is_prime(1))
+	fmt.Printf("isPrime of 2 %d\n", Integer.is_prime(2))
+	fmt.Printf("isPrime of 3 %d\n", Integer.is_prime(3))
+	fmt.Printf("isPrime of 4 %d\n", Integer.is_prime(4))
+}
+
+func testNextPrime(Integer *Integer) {
+	fmt.Printf("next prime after 1 %d\n", Integer.get_next_prime(1))
+	fmt.Printf("next prime after 2 %d\n", Integer.get_next_prime(2))
+	fmt.Printf("next prime after 3 %d\n", Integer.get_next_prime(3))
+	fmt.Printf("next prime after 4 %d\n", Integer.get_next_prime(4))
+}
+
+func somme_to_from(Integer *Integer) {
+	fmt.Printf("somme_to_from 1 to 10 %d\n", Integer.somme_to_from(1, 10))
+	fmt.Printf("somme_to_from 2 to 11 %d\n", Integer.somme_to_from(2, 11))
+	fmt.Printf("somme_to_from 3 to 12 %d\n", Integer.somme_to_from(3, 12))
+	fmt.Printf("somme_to_from 4 to 13 %d\n", Integer.somme_to_from(4, 13))
+}
+
 func getArgv() []string {
 	return os.Args
 }
@@ -89,6 +110,8 @@ func main() {
 	testDiv(a)
 	testMod(a)
 	testPow(a)
+	testPrime(a)
+	testNextPrime(a)
 	displayArg(getArg())
 	test()
 	testUser()

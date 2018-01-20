@@ -17,10 +17,13 @@ func (data *Integer)is_prime(i int) int {
 	if data.signed(i) == -1 || i == 0 {
 		return -1
 	}
-	if i == 1 {
+	if i <= 3 {
 		return 1
 	}
-	for add = 2; add < i / 2; add++ {
+	if (i == 4) {
+		return 0
+	}
+	for add = 5; add < i / 2; add++ {
 		if i % add == 0 {
 			return 0
 		}
@@ -34,4 +37,11 @@ func (data *Integer)get_next_prime(i int) int {
 
 	}
 	return test
+}
+
+func (data *Integer)factorial(i int) int {
+	if (i <= 1) {
+		return 1
+	}
+	return i * data.factorial(i - 1)
 }
