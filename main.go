@@ -3,6 +3,12 @@ package main
 import "fmt"
 import "os"
 
+type Integer struct {
+}
+
+type Float struct {
+}
+
 func swap(x, y int) (int, int) {
 	return y, x
 }
