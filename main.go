@@ -3,67 +3,10 @@ package main
 import "fmt"
 import "os"
 
-func sum(x, y int) int {
-	return x + y
-}
-
-func sous(x, y int) int {
-	return x - y
-}
-
-func mul(x, y int) int {
-	return x * y
-}
-
-func div(x, y int) int {
-	return x / y
-}
-
-func mod(x, y int) int {
-	return x / y
-}
-
 func swap(x, y int) (int, int) {
 	return y, x
 }
 
-func signed(x int) int {
-	if x < 0 {
-		return -1
-	}
-	return 1
-}
-
-func biggerthan(x, y int) int {
-	if x < y {
-		return 0
-	}
-	return 1
-}
-
-func lessthan(x, y int) int {
-	if x > y {
-		return 0
-	}
-	return 1
-}
-
-func is_equal(x, y int) int {
-	if x == y {
-		return 1
-	}
-	return 0
-}
-
-func pow(x int) int {
-
-	neg := signed(x)
-	ret := 0
-	for ret = 0; x != 0; ret++ {
-		x = x / 10
-	}
-	return ret * neg
-}
 
 func testSum() {
 	fmt.Printf("Sum of 4 + 4 %d\n", sum(4, 4))
@@ -126,6 +69,9 @@ func displayArg(argv []string, argc int) {
 }
 
 func main() {
+	var Integer *Integer
+
+	Integer = new(Integer)
 	testSum()
 	testSous()
 	testMul()

@@ -53,6 +53,13 @@ func (data *Integer)get_pow(x int) int {
 	return ret * neg
 }
 
+func (data *Integer)signed(x int) int {
+	if x < 0 {
+		return -1
+	}
+	return 1
+}
+
 func getPi() float {
 	return 3.14
 }
