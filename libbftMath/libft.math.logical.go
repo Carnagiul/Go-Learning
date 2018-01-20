@@ -113,3 +113,7 @@ func (data *Float)signed(x float64) int {
 	}
 	return 1
 }
+
+func (data *Float)PI() float64 {
+	return 3.14
+}
