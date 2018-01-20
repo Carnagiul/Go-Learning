@@ -1,7 +1,7 @@
 package main
 
 func (data *Float)Area_Circle(c float64) float64 {
-	return c * c * Float.PI()
+	return c * c * data.PI()
 }
 
 func (data *Integer)somme_to_from(i, j int) int {
