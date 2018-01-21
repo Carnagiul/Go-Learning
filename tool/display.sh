@@ -1,5 +1,5 @@
 NAME="Go-Learning"
-PROJECT=("™ 乂❤‿❤乂 Project ${NAME} 乂❤‿❤乂 ™", "✦ Project ${NAME} ╭∩╮（︶︿︶）╭∩╮ ✦")
+PROJECT=("™ 乂❤‿❤乂 Project ${NAME} 乂❤‿❤乂 ™" "✦ Project ${NAME} ╭∩╮（︶︿︶）╭∩╮ ✦" "♥ (╥﹏╥) Project ${NAME} (╥﹏╥) ♥" "☠ Project ${NAME} ☠" "ツ Project ${NAME} ツ")
 
 rand=$[ $RANDOM % ${#PROJECT[@]} ]
 DATA=${PROJECT[$rand]}
