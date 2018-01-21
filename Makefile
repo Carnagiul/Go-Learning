@@ -18,7 +18,9 @@ INCLUDE_2 = *.go
 
 all: $(NAME)
 
+
 $(NAME):
+	sh tool/display.sh
 	go build -o a.out $(INCLUDE_2)
 
 .PHONY : all
