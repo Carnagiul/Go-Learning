@@ -1,8 +1,4 @@
 NAME="Go-Learning"
-PROJECT=("™ 乂❤‿❤乂 Project ${NAME} 乂❤‿❤乂 ™" "✦ Project ${NAME} ╭∩╮（︶︿︶）╭∩╮ ✦" "♥ (╥﹏╥) Project ${NAME} (╥﹏╥) ♥" "☠ Project ${NAME} ☠" "ツ Project ${NAME} ツ")
-
-rand=$[ $RANDOM % ${#PROJECT[@]} ]
-DATA=${PROJECT[$rand]}
 clear
 
 if which tput >/dev/null 2>&1; then
@@ -23,6 +19,11 @@ else
   BOLD=""
   NORMAL=""
 fi
+
+PROJECT=("$RED ❥ $GREEN Project $YELLOW $NAME $RED ❥" "$YELLOW ツ $RED Project $GREEN $NAME $YELLOW ツ")
+
+rand=$[ $RANDOM % ${#PROJECT[@]} ]
+DATA=${PROJECT[$rand]}
 
 echo	$GREEN
 echo	${PROJECT[$rand]}
