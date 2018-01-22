@@ -29,11 +29,15 @@ if [ $LOCAL = $REMOTE ]; then
 	echo ""
 elif [ $LOCAL = $BASE ]; then
 	echo ""
-	printf "${BLUE}%s${NORMAL}\n" "Updating Project"
-	if git pull --rebase --stat origin master
-		then
-			printf '%s%s' "$GREEN" "Le projet a bien ete mis a jour"
+    echo "[Mise a jour en attente] [Y/n]: \c"
+	read line
+	if [[ "$line" == Y* ]] || [[ "$line" == y* ]] || [ -z "$line" ]; then
+		printf "${BLUE}%s${NORMAL}\n" "Updating Project"
+		if git pull --rebase --stat origin master
+			then
+				printf '%s%s' "$GREEN" "Le projet a bien ete mis a jour"
 		fi
+    fi
 elif [ $REMOTE = $BASE ]; then
 	echo "Need to push"
 else
