@@ -1,9 +1,12 @@
+// Created by cgo - DO NOT EDIT
+
+//line /Users/tonpeyre/Desktop/GO/Go-Learning/main.go:1
 package main
 
 import "fmt"
 import "os"
-import "C"
 
+//line /Users/tonpeyre/Desktop/GO/Go-Learning/main.go:7
 type Integer struct {
 }
 
@@ -11,7 +14,7 @@ type Float struct {
 }
 
 type user struct {
-	age		int
+	age	int
 	name	string
 	addr	string
 }
@@ -120,4 +123,3 @@ func main() {
 	fmt.Printf("test cmp aaaa == %d\n", ft_strncmp("test", "test", -1))
 	testCFun()
 }
-

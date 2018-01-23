@@ -1,5 +1,7 @@
 package main
 
+import "C"
+
 func (data *Integer)sum(a,b int) int {
 	return a + b
 }

@@ -1,5 +1,7 @@
 package main
 
+import "C"
+
 func (data *Float)Area_Circle(c float64) float64 {
 	return c * c * data.PI()
 }
